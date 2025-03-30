@@ -4,7 +4,7 @@ import axios from "axios";
 const StudentList = ({ students, fetchStudents }) => {
   const deleteStudent = async (id) => {
     try {
-      await axios.delete(`http://127.0.0.1:5000/api/students/${id}`);
+      await axios.delete('http://127.0.0.1:5000/api/students/${id}');
       fetchStudents();
     } catch (error) {
       console.error("Error deleting student:", error);
@@ -41,7 +41,7 @@ const listStyles = {
   },
   heading: {
     marginBottom: "10px",
-    color: "yellow",
+    color: "purple",
   },
   list: {
     listStyleType: "none",
@@ -53,16 +53,16 @@ const listStyles = {
     alignItems: "center",
     padding: "10px",
     borderBottom: "1px solid lightgreen",
-    backgroundColor: "yellow",
+    backgroundColor: "pink",
     borderRadius: "5px",
     marginBottom: "5px",
-    color: "black",
+    color: "purple",
   },
   studentInfo: {
     flexGrow: 1,
   },
   deleteButton: {
-    backgroundColor: "white",
+    backgroundColor: "pink",
     color: "black",
     border: "none",
     padding: "8px 12px",
@@ -71,7 +71,7 @@ const listStyles = {
   },
   noStudents: {
     fontStyle: "italic",
-    color: "yellow",
+    color: "pink",
   },
 };
 
